@@ -1,0 +1,15 @@
+{
+  "name": "myWebServer",
+  "version": "1.0.0",
+  "description": "web server for private use",
+  "main": "index.js",
+  "author": "minjae_cheon",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^4.2.0",
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
