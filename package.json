@@ -1,15 +1,29 @@
 {
-  "name": "myWebServer",
+  "name": "my-web-server",
   "version": "1.0.0",
   "description": "web server for private use",
-  "main": "index.js",
   "author": "minjae_cheon",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cmj225/myWebServer.git"
+  },
+  "license": "BSD-3-Clause",
+  "main": "init.js",
   "dependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.7",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
     "express": "^4.17.1",
     "helmet": "^4.2.0",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.6"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon --exec babel-node init.js --delay-2"
   }
 }
